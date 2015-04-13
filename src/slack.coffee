@@ -97,6 +97,7 @@ class SlackBot extends Adapter
     process.exit 0
 
   message: (msg) =>
+    console.log "Got Message!!", msg
     # Ignore our own messages
     return if msg.user == @self.id
 
